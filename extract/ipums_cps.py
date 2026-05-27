@@ -34,9 +34,9 @@ RAW_DIR.mkdir(parents=True, exist_ok=True)
 
 # 60 variables per person -- the dimensions that make this highly dimensional
 VARIABLES = [
-    # Identifiers + weights
+    # Identifiers + weights (ASEC-confirmed)
     "YEAR", "SERIAL", "MONTH", "CPSID", "PERNUM", "CPSIDP",
-    "ASECWT", "WTFINL", "EARNWT",
+    "ASECWT",
     # Demographics
     "AGE", "SEX", "RACE", "HISPAN", "MARST", "NATIVITY", "CITIZEN",
     # Geography
@@ -50,11 +50,11 @@ VARIABLES = [
     # Earnings
     "INCWAGE", "EARNWEEK", "HOURWAGE", "PAIDHOUR", "INCTOT",
     # Benefits
-    "UNION", "HCOVANY", "HINSEMP", "HINSCAID", "HINSCARE",
+    "UNION",
     # Unemployment details
-    "WHYUNEMP", "DURUNEMP", "WKSUNEM1", "WHYLEFT", "LOOKING",
+    "WHYUNEMP", "DURUNEMP", "WKSUNEM1",
     # Work arrangement
-    "NUMJOB", "FULLPART", "TELEWORK",
+    "FULLPART",
     # Household context
     "RELATE", "NCHILD", "FAMSIZE", "POVERTY", "OFFPOV",
 ]
