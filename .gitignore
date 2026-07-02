@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project specific
+data/raw/
+warehouse/*.duckdb
+transform/profiles.yml
+transform/target/
+transform/dbt_packages/
+transform/logs/
+
+# OS
+.DS_Store
+Thumbs.db
