@@ -72,8 +72,38 @@ DUCKDB_PATH=warehouse/labor.duckdb      # Default warehouse location
 
 ### 1. Extract Raw Data
 
+#### Step 1a: O*NET (Automatic)
 ```bash
-# Extract all sources (O*NET + IPUMS; BLS requires manual download)
+uv run python extract/onet_api.py
+# or sample mode (first 50 occupations):
+uv run python extract/onet_api.py --sample
+```
+
+#### Step 1b: BLS OEWS (Manual Download Required)
+
+Open each URL in your browser and save to `data/raw/oews/`:
+
+- https://download.bls.gov/pub/time.series/oe/oe.area
+- https://download.bls.gov/pub/time.series/oe/oe.data.1.AllData (~316 MB)
+- https://download.bls.gov/pub/time.series/oe/oe.industry
+- https://download.bls.gov/pub/time.series/oe/oe.occupation
+- https://download.bls.gov/pub/time.series/oe/oe.series
+
+**Note:** Some browsers may add `.txt` extension. Rename if needed: `mv oe.area.txt oe.area`
+
+#### Step 1c: IPUMS CPS (Automatic, Time-Gated)
+```bash
+# Requires IPUMS_API_KEY in .env
+# Expect 2-10 min wait for server processing
+uv run python extract/ipums_cps.py
+
+# or sample mode (2 years only):
+uv run python extract/ipums_cps.py --sample
+```
+
+#### Quick Shortcuts
+```bash
+# Extract all sources at once (O*NET + IPUMS; BLS manual only)
 make extract
 
 # Sample mode (first 50 occupations, 2 years of IPUMS)
@@ -81,10 +111,9 @@ make extract-sample
 ```
 
 **Full Extract Details:**
-See [data/README.md](data/README.md) for instructions on:
-- Automatic O*NET API fetch
-- Manual BLS OEWS bulk download
-- Automatic IPUMS CPS extract (with wait time)
+See [data/README.md](data/README.md) for additional information on:
+- Manual BLS OEWS file conversion
+- Data sizes and expected row counts
 
 ### 2. Load into Data Warehouse
 
