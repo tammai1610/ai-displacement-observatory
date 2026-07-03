@@ -1,0 +1,14 @@
+activity_id,activity_name,ai_exposure_category,weight
+4.A.1.b.2,Processing Information,high,1.0
+4.A.2.a.4,Analyzing Data or Information,high,1.0
+4.A.2.b.2,Thinking Creatively,high,0.8
+4.A.4.a.5,Interacting With Computers,high,1.0
+4.A.4.b.4,Updating and Using Relevant Knowledge,high,0.9
+4.A.3.b.6,Documenting or Recording Information,high,0.7
+4.A.1.b.1,Getting Information,high,0.6
+4.A.4.a.4,Estimating the Quantifiable Characteristics,high,0.8
+4.A.3.a.4,Assisting and Caring for Others,low,1.0
+4.A.3.b.1,Performing for or Working Directly with the Public,low,0.9
+4.A.1.a.2,Handling and Moving Objects,low,1.0
+4.A.4.a.3,Controlling Machines and Processes,low,0.8
+4.A.3.b.2,Communicating with Supervisors Peers or Subordinates,low,0.5

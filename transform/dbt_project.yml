@@ -1,0 +1,28 @@
+name: "ai_observatory"
+version: "1.0.0"
+config-version: 2
+
+profile: "ai_observatory"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+models:
+  ai_observatory:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  ai_observatory:
+    +quote_columns: false

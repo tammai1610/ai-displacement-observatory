@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_worker_risk
+    description: Person-level labor market fact table with AI exposure labels.
+    columns:
+      - name: year
+        tests: [not_null]
+      - name: serial
+        tests: [not_null]
+      - name: pernum
+        tests: [not_null]
+      - name: worker_risk_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['at_risk_unemployed', 'at_risk_no_income', 'high_exposure_employed', 'low_exposure', 'unknown']
+
+  - name: int_ai_exposure_score
+    columns:
+      - name: onet_code
+        tests: [not_null, unique]

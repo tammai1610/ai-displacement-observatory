@@ -1,0 +1,8 @@
+[project]
+name = "ai-displacement-observatory-dbt"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "dbt-core>=1.11,<2.0",
+    "dbt-duckdb>=1.9,<2.0",
+]

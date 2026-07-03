@@ -1,0 +1,8 @@
+ai_observatory:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ./warehouse/labor.duckdb
+      schema: analytics
+      threads: 4

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: onet_work_activities
+      - name: onet_abilities
+      - name: onet_occupations
+      - name: cps_persons
+      - name: oews_data
+      - name: oews_series
+      - name: oews_occupation
+      - name: oews_area
+      - name: oews_industry
