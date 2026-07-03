@@ -219,6 +219,13 @@ __marimo__/
 
 # Project specific
 data/raw/
+data/
+warehouse/*.duckdb
+transform/profiles.yml
+transform/target/
+transform/dbt_packages/
+transform/logs/
+data/raw/
 warehouse/*.duckdb
 transform/profiles.yml
 transform/target/
