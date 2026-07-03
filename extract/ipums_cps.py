@@ -19,7 +19,6 @@ Run: uv run python extract/ipums_cps.py
      uv run python extract/ipums_cps.py --sample   (2 years only)
 """
 import os
-import time
 from pathlib import Path
 
 import pandas as pd
@@ -36,19 +35,19 @@ RAW_DIR.mkdir(parents=True, exist_ok=True)
 VARIABLES = [
     # Identifiers + weights (ASEC-confirmed)
     "YEAR", "SERIAL", "MONTH", "CPSID", "PERNUM", "CPSIDP",
-    "ASECWT",
+    "ASECWT", "EARNWT",
     # Demographics
     "AGE", "SEX", "RACE", "HISPAN", "MARST", "NATIVITY", "CITIZEN",
     # Geography
     "STATEFIP", "REGION", "METFIPS",
     # Education
-    "EDUC", "DIFFANY",
+    "EDUC", "SCHLCOLL", "DIFFANY",
     # Occupation + Industry (join key to O*NET AI exposure score)
     "OCC", "OCC2010", "IND", "IND1990", "CLASSWKR", "FIRMSIZE",
     # Employment status
     "EMPSTAT", "LABFORCE", "WKSTAT", "AHRSWORKT", "WKSWORK1", "UHRSWORKLY",
     # Earnings
-    "INCWAGE", "EARNWEEK", "HOURWAGE", "PAIDHOUR", "INCTOT",
+    "INCWAGE", "EARNWEEK", "HOURWAGE", "PAIDHOUR", "INCTOT", "INCBUS", "INCSS",
     # Benefits
     "UNION",
     # Unemployment details
