@@ -11,10 +11,11 @@ Then run: uv run python extract/load_duckdb.py
 Output: warehouse/labor.duckdb with raw.* views ready for dbt
 """
 import duckdb
+import os
 from pathlib import Path
 
-DUCKDB_PATH = "warehouse/labor.duckdb"
-Path("warehouse").mkdir(exist_ok=True)
+DUCKDB_PATH = os.getenv("DUCKDB_PATH", "warehouse/labor.duckdb")
+Path(DUCKDB_PATH).parent.mkdir(exist_ok=True)
 
 
 VIEWS = {
