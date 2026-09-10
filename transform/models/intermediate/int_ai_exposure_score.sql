@@ -34,7 +34,7 @@ normalized as (
 )
 select
     n.onet_code,
-    replace(regexp_replace(n.onet_code, '\\..*$', ''), '-', '') as soc_code,
+    replace(split_part(n.onet_code, '.', 1), '-', '') as soc_code,
     o.occupation_title,
     n.high_score,
     n.low_score,
