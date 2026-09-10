@@ -1,14 +1,42 @@
 activity_id,activity_name,ai_exposure_category,weight
-4.A.1.b.2,Processing Information,high,1.0
+4.A.1.a.1,Getting Information,high,0.6
+4.A.1.a.2,"Monitoring Processes, Materials, or Surroundings",low,0.4
+4.A.1.b.1,"Identifying Objects, Actions, and Events",low,0.3
+4.A.1.b.2,"Inspecting Equipment, Structures, or Materials",low,0.7
+4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",high,0.8
+4.A.2.a.1,"Judging the Qualities of Objects, Services, or People",high,0.5
+4.A.2.a.2,Processing Information,high,1.0
+4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,high,0.9
 4.A.2.a.4,Analyzing Data or Information,high,1.0
+4.A.2.b.1,Making Decisions and Solving Problems,high,0.6
 4.A.2.b.2,Thinking Creatively,high,0.8
-4.A.4.a.5,Interacting With Computers,high,1.0
-4.A.4.b.4,Updating and Using Relevant Knowledge,high,0.9
-4.A.3.b.6,Documenting or Recording Information,high,0.7
-4.A.1.b.1,Getting Information,high,0.6
-4.A.4.a.4,Estimating the Quantifiable Characteristics,high,0.8
-4.A.3.a.4,Assisting and Caring for Others,low,1.0
-4.A.3.b.1,Performing for or Working Directly with the Public,low,0.9
-4.A.1.a.2,Handling and Moving Objects,low,1.0
-4.A.4.a.3,Controlling Machines and Processes,low,0.8
-4.A.3.b.2,Communicating with Supervisors Peers or Subordinates,low,0.5
+4.A.2.b.3,Updating and Using Relevant Knowledge,high,0.9
+4.A.2.b.4,Developing Objectives and Strategies,high,0.5
+4.A.2.b.5,Scheduling Work and Activities,high,0.6
+4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",high,0.5
+4.A.3.a.1,Performing General Physical Activities,low,1.0
+4.A.3.a.2,Handling and Moving Objects,low,1.0
+4.A.3.a.3,Controlling Machines and Processes,low,0.8
+4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",low,0.9
+4.A.3.b.1,Working with Computers,high,1.0
+4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",high,0.8
+4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,low,0.9
+4.A.3.b.5,Repairing and Maintaining Electronic Equipment,low,0.8
+4.A.3.b.6,Documenting/Recording Information,high,0.9
+4.A.4.a.1,Interpreting the Meaning of Information for Others,high,0.7
+4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",low,0.5
+4.A.4.a.3,Communicating with People Outside the Organization,low,0.4
+4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,low,0.7
+4.A.4.a.5,Assisting and Caring for Others,low,1.0
+4.A.4.a.6,Selling or Influencing Others,low,0.5
+4.A.4.a.7,Resolving Conflicts and Negotiating with Others,low,0.7
+4.A.4.a.8,Performing for or Working Directly with the Public,low,0.9
+4.A.4.b.1,Coordinating the Work and Activities of Others,low,0.5
+4.A.4.b.2,Developing and Building Teams,low,0.7
+4.A.4.b.3,Training and Teaching Others,low,0.5
+4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",low,0.8
+4.A.4.b.5,Coaching and Developing Others,low,0.8
+4.A.4.b.6,Providing Consultation and Advice to Others,low,0.4
+4.A.4.c.1,Performing Administrative Activities,high,0.8
+4.A.4.c.2,Staffing Organizational Units,low,0.4
+4.A.4.c.3,Monitoring and Controlling Resources,high,0.4
