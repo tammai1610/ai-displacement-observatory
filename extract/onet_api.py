@@ -81,7 +81,7 @@ async def fetch_work_activities(
             "onet_code": onet_code,
             "activity_id": item["id"],
             "activity_name": item["name"],
-            "importance": item.get("score", {}).get("value"),
+            "importance": item.get("importance"),
         }
         for item in r.json().get("element", [])
     ]
@@ -105,7 +105,7 @@ async def fetch_abilities(
             "onet_code": onet_code,
             "ability_id": item["id"],
             "ability_name": item["name"],
-            "importance": item.get("score", {}).get("value"),
+            "importance": item.get("importance"),
         }
         for item in r.json().get("element", [])
     ]
